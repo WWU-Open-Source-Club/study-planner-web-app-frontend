@@ -7,11 +7,21 @@
   --background-color: #4D4365;
 }
 
+#root {
+  height: 100%;
+}
+
+html {
+  height: 100vh;
+}
+
 body {
   text-align: center;
   background-color: var(--background-color);
   padding: 10px;
+  height: 100%;
 }
+
 
 .Body {
   display: flex;
@@ -20,7 +30,7 @@ body {
   background-color: var(--background-color);
 
   padding: 10px;
-  height: 150px;
+  height: 80%;
 }
 
 .Header {
@@ -31,6 +41,17 @@ body {
 
 .Calendar-Window {
   flex-grow: 8;
+  display: flex;
+  border: solid;
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+  border-radius: 12px;
+  border-width: 5px;
+}
+
+
+.To-Do {
+  flex-grow: 3;
   display: flex;
   border: solid;
   background-color: var(--background-color);

@@ -8,9 +8,9 @@ import img_magnifier from './assets/prototype/magnifying-glass-prototype.png';
 class SlideSwitch extends React.Component {
   render() {
     return (
-      <label class="switch">
+      <label className="switch">
         <input type="checkbox" onClick={() => this.props.onClick()} />
-        <span class="slider round"></span>
+        <span className="slider round"></span>
       </label>
     )
   }
@@ -135,7 +135,10 @@ class ToDoItem extends React.Component {
 // The ToDo list.
 class ToDo extends React.Component {
   render() {
-    return null;
+    return (
+      <div className="To-Do">
+      </div>
+    );
   }
 }
 
@@ -145,6 +148,7 @@ class Body extends React.Component {
   render() {
     return (
       <div className="Body">
+        <ToDo />
         <CalendarViewWindow />
       </div>
     )

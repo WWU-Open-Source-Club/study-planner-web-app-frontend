@@ -176,11 +176,11 @@ class Footer extends React.Component {
 // The Main App Function, render functions branch out from here.
 function App() {
   return (
-    <body className="App">
+    <div className="App">
         <Header />
         <Body />
         <Footer />
-    </body>
+    </div>
   );
 }
 

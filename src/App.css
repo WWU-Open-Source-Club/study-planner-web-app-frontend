@@ -9,28 +9,47 @@
 
 #root {
   height: 100%;
+  margin: 0;
 }
 
 html {
-  height: 100vh;
+  height: 100%;
+
 }
 
 body {
   text-align: center;
   background-color: var(--background-color);
+  /*check*/
   padding: 10px;
   height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
+.App {
+  height: 100%;
+  /*check*/
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
 
 .Body {
   display: flex;
   flex-direction: row;
   text-align: center;
   background-color: var(--background-color);
-
   padding: 10px;
+  /*check*/
   height: 80%;
+  flex: 1;
 }
 
 .Header {

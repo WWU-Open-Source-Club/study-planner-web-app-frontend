@@ -15,19 +15,22 @@ body {
 
 .Body {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   text-align: center;
   background-color: var(--background-color);
-
   padding: 10px;
-  height: 150px;
+  height: 500px;
+  
 }
+
+
 
 .Header {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 
 .Calendar-Window {
   flex-grow: 8;
@@ -39,6 +42,8 @@ body {
   border-width: 5px;
 }
 
+
+
 .Calendar-View {
   flex-grow: 1;
   background: content-box white;
@@ -49,12 +54,35 @@ body {
   flex-grow: 1;
   background: content-box black;
   background-color: black;
+  
+}
+
+/* Just added feel free to remove if it violates the design requirement */
+.Todo-View{
+  flex-grow: 1;
+  width: 200px;
+  background: content-box #4D4365;
+  border: solid white;
+  border-radius: 12px;
+  border-width: 5px;
+  border-color: var(--border-color);
+  margin-right: 5px;
+  padding-top: 0;
+  margin-top: 0;
+
+}
+
+.Todo-Title {
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
 }
 
 .Search-Bar {
   justify-content: space-evenly;
   flex-grow: 10;
   display: flex;
+  
 }
 
 .Search-Button {

@@ -69,7 +69,7 @@ class ScheduleEvent extends React.Component {
 class ScheduleView extends React.Component {
   render() {
     return (
-      <div className="Schedule-View"></div>
+      <div className="Schedule-View">  </div>
     );
   }
 }
@@ -79,6 +79,7 @@ class ScheduleView extends React.Component {
 class CalendarEvent extends React.Component {
   render() {
     return null;
+    
   }
 }
 
@@ -127,15 +128,23 @@ class CalendarViewWindow extends React.Component {
 
 // For all the items contained in the ToDo list.
 class ToDoItem extends React.Component {
-  render() {
-    return null;
+  render() {   
+      return (
+        <div className="Todo-Title"></div>
+      );
   }
+    
 }
+
 
 // The ToDo list.
 class ToDo extends React.Component {
   render() {
-    return null;
+    return (
+      <div className="Todo-View">
+        <div className="Todo-Title">To Do</div>      
+      </div>
+    );
   }
 }
 
@@ -146,6 +155,7 @@ class Body extends React.Component {
     return (
       <div className="Body">
         <CalendarViewWindow />
+         <ToDo/>   
       </div>
     )
   }
@@ -166,7 +176,6 @@ class Footer extends React.Component {
     return null;
   }
 }
-
 
 
 // The Main App Function, render functions branch out from here.

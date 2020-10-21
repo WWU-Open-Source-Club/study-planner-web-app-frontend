@@ -1,8 +1,11 @@
 import React from 'react';
 import logo, { ReactComponent } from './logo.svg';
 import './App.css';
+import {CalendarViewWindow} from './Calendar.js'
 import img_searchbar from './assets/prototype/search-bar-prototype.png';
 import img_magnifier from './assets/prototype/magnifying-glass-prototype.png';
+
+
 
 
 class SlideSwitch extends React.Component {
@@ -15,7 +18,6 @@ class SlideSwitch extends React.Component {
     )
   }
 }
-
 
 
 // The search bar.
@@ -57,74 +59,6 @@ class Header extends React.Component {
 }
 
 
-
-// For displaying individual events on the schedule.
-class ScheduleEvent extends React.Component {
-  render() {
-    return null;
-  }
-}
-
-// For a Schedule View.
-class ScheduleView extends React.Component {
-  render() {
-    return (
-      <div className="Schedule-View"></div>
-    );
-  }
-}
-
-
-// For displaying individual events on the calendar.
-class CalendarEvent extends React.Component {
-  render() {
-    return null;
-  }
-}
-
-// For all Calendar grid boxes.
-class CalendarDay extends React.Component {
-  render() {
-    return null;
-  }
-}
-
-// FOr a Calendar View.
-class CalendarView extends React.Component {
-  render() {
-    return (
-      <div className="Calendar-View"></div>
-    );
-  }
-}
-
-
-// To contain and toggle between Calendar and Schedule Views.
-class CalendarViewWindow extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      calendarView: true,
-    };
-  }
-
-  swapViews() {
-    this.setState({calendarView: !this.state.calendarView});
-  }
-
-  render() {
-    const view = this.state.calendarView ? <CalendarView /> : <ScheduleView />;
-
-    return (
-      <div className="Calendar-Window">
-        {view}
-        <SlideSwitch onClick={() => this.swapViews()} />
-      </div>
-    )
-  }
-}
-
-
 // For all the items contained in the ToDo list.
 class ToDoItem extends React.Component {
   render() {
@@ -149,7 +83,7 @@ class Body extends React.Component {
     return (
       <div className="Body">
         <ToDo />
-        <CalendarViewWindow />
+        <CalendarViewWindow slideSwitch={SlideSwitch} />
       </div>
     )
   }

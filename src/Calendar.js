@@ -1,4 +1,5 @@
 import React from 'react';
+import {SlideSwitch} from './VizUtilities';
 export {CalendarViewWindow};
 
 // For displaying individual events on the schedule.
@@ -57,8 +58,6 @@ class CalendarViewWindow extends React.Component {
 
   render() {
     const view = this.state.calendarView ? <CalendarView /> : <ScheduleView />;
-
-    const SlideSwitch = this.props.slideSwitch;
 
     return (
       <div className="Calendar-Window">

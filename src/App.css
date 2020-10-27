@@ -20,7 +20,6 @@ html {
 body {
   text-align: center;
   background-color: var(--background-color);
-  /*check*/
   padding: 10px;
   height: 100%;
   margin: 0;
@@ -35,7 +34,6 @@ body {
 
 .App {
   height: 100%;
-  /*check*/
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -46,10 +44,9 @@ body {
   flex-direction: row;
   text-align: center;
   background-color: var(--background-color);
-  padding: 10px;
-  /*check*/
-  height: 80%;
-  flex: 1;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  flex: 3;
 }
 
 .Header {
@@ -142,6 +139,30 @@ body {
   width: 0;
   height: 0;
 }
+
+
+.statistics {
+  flex: 0.45;
+  display: flex;
+  border: solid;
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+  border-radius: 12px;
+  border-width: 5px;
+  margin-right: 5px;
+}
+
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: var(--background-color);
+  flex: 1;
+}
+
+
+
 
 /* The slider */
 .slider {

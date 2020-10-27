@@ -35,6 +35,7 @@ class Body extends React.Component {
   }
 }
 
+
 // The bottom portion of the screen.
 class Footer extends React.Component {
   render() {
